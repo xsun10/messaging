@@ -7,12 +7,17 @@
 //
 
 #import "MessagingAppDelegate.h"
+#import "ChatTVC.h";
 
 @implementation MessagingAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Register sound and alert for the push notifications
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    if (launchOptions != nil) {
+        //NSDictionary *dirctionary = [launchOptions];
+    }
     return YES;
 }
 							
@@ -41,6 +46,32 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    NSString *newToken = [deviceToken description];
+    newToken = [newToken stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    newToken = [newToken stringByReplacingOccurrencesOfString:@" " withString:@""];//delete the space in token
+    
+    /*UINavigationController *navigationController = (UINavigationController *)_window.rootViewController;
+    ChatTVC *chatTVC = (ChatTVC *)[navigationController.viewControllers objectAtIndex:2];
+    MessagingModel * dataModel = chatTVC.dataModel;*/
+    
+    NSLog(@"My Token:%@", newToken);
+    
+    [self postUpadteRequest];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+#warning NO FAIL OPERATIONS, ASK JAMES
+    NSLog(@"Register Remote Notification failed:%@", error);
+}
+
+- (void)postUpadteRequest
+{
+    
 }
 
 @end
