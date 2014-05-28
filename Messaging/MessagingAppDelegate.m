@@ -71,7 +71,7 @@
 
 - (void)postUpadteRequest
 {
-    NSLog(@"test git!");
+    
 }
 
 @end
