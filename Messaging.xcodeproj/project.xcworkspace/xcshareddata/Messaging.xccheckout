@@ -5,46 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>20A40F2D-8C70-4ADC-A05B-23CC2A1479CE</string>
+	<string>8D7D9C18-5B45-4BA0-9EED-DA36F166EB2C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Messaging</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5F0575E9-E074-4550-BC08-0B8A9E16AA96</key>
-		<string>https://github.com/turboholdings/vaidenapp.git</string>
+		<key>5AF1BCF9-33F8-4AB7-BC66-16AE55B86C2C</key>
+		<string>ssh://github.com/xsun10/messaging.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Messaging.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5F0575E9-E074-4550-BC08-0B8A9E16AA96</key>
+		<key>5AF1BCF9-33F8-4AB7-BC66-16AE55B86C2C</key>
 		<string>../..</string>
-		<key>AAE36491-E19F-4B4D-B63B-78028A232611</key>
-		<string>../../Messaging</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/turboholdings/vaidenapp.git</string>
+	<string>ssh://github.com/xsun10/messaging.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5F0575E9-E074-4550-BC08-0B8A9E16AA96</string>
+	<string>5AF1BCF9-33F8-4AB7-BC66-16AE55B86C2C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5F0575E9-E074-4550-BC08-0B8A9E16AA96</string>
+			<string>5AF1BCF9-33F8-4AB7-BC66-16AE55B86C2C</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Messaging</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AAE36491-E19F-4B4D-B63B-78028A232611</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Messaging</string>
+			<string>messaging</string>
 		</dict>
 	</array>
 </dict>
